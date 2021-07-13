@@ -4,7 +4,7 @@ import client from "../apollo-client";
 import Modal from "./components/modal";
 
 export default function MyModal({ services, segments, types }) {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);

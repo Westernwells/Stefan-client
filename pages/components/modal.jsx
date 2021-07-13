@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { X } from "heroicons-react";
 
-const Modal = ({ closeModal, isOpen , services, segments, types}) => (
+const Modal = ({ closeModal, isOpen=false , services, segments, types}) => (
   <div className="text-lg">
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog
