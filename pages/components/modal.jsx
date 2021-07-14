@@ -70,7 +70,7 @@ const Modal = ({ closeModal, isOpen=false , services, segments, types}) => (
 
                       <select
                         name="language"
-                        className="hidden md:block w-full text-sm outline-none p-2 rounded-md border-2 focus:outline-none focus:ring-0"
+                        className="block w-full text-sm outline-none p-2 rounded-md border-2 focus:outline-none focus:ring-0"
                         id=""
                       >
                         {segments && segments.map((segment, index) => <option key={index} value={segment.segment}>{segment.segment}</option>)}
@@ -83,7 +83,7 @@ const Modal = ({ closeModal, isOpen=false , services, segments, types}) => (
 
                       <select
                         name="language"
-                        className="hidden md:block w-full text-sm outline-none rounded-md p-2 border-2 focus:outline-none focus:ring-0 divide-solid divide-y-2 form-input"
+                        className="block w-full text-sm outline-none rounded-md p-2 border-2 focus:outline-none focus:ring-0 divide-solid divide-y-2 form-input"
                         id=""
                       >
                        {services && services.map((service, index) => <option key={index} value={service.service}>{service.service}</option>)}
